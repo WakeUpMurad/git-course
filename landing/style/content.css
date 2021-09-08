@@ -1,18 +1,16 @@
 .content {
-    padding: 10px;
-    z-index: 50;
-    max-width: 1450px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    margin: auto;
+
 }
 .section-1 {
     display: flex;
     width: 100%;
+    margin-bottom: 50px;
     justify-content: space-between;
-    margin: -950px 0 200px;
-
+    background: url(../img/headerBG.jpg) 0 0/100% 100% no-repeat;
+}
+.section-1__block {
+    display: flex;
+    padding: 150px 70px;
 }
 .section-1__body {
     display: flex;
@@ -66,7 +64,7 @@
 .section-1__img {
     max-width: 646px;
     max-height: 776px;
-
+    min-width: 290px;
 }
 .section-2 {
     display: flex;

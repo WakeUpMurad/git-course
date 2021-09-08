@@ -5,6 +5,7 @@
     height: 300px;
     align-items: center;
     justify-content: center;
+    color: #ffffff;
     background: url(../img/footerBG.jpg) 0 0/100% 100% no-repeat;
 }
 .footer__link {
