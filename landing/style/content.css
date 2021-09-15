@@ -10,28 +10,29 @@
 }
 .section-1__block {
     display: flex;
-    padding: 150px 70px;
+    justify-content: space-between;
+    padding: 140px 70px;
 }
 .section-1__body {
     display: flex;
-    margin: 0 20px 200px 0;
+    margin: 0 20px 0 0;
+    width: 100%;
     padding: 20px 0 0 0;
     flex-direction: column;
-    justify-content: center;
 }
 
-.section-1__body_title{
+.section-1__body_title {
     font-size: 48px;
     font-weight: 700;
     line-height: 124%;
     text-align: left;
-    margin: 0 200px 20px 0;
+    margin: 0 0 20px 0;
 }
-.section-1__body_text{
+.section-1__body_text {
     font-size: 20px;
     line-height: 124%;
     text-align: left;
-    padding: 0 200px 20px 0;
+    padding: 0 0 20px 0;
 }
 .section-1__body_buttons {
     display: flex;
@@ -39,27 +40,42 @@
     font-size: 17px;
     font-weight: bold;
     line-height: 124%;
-    margin-right: 200px;
 }
 .btn__app-store {
     display: flex;
     height: 53px;
     width: 200px;
     padding:0 20px;
+    margin: 0 10px 10px 0;
     justify-content: space-between;
     align-items: center;
     border: 2px solid #fff;
     border-radius: 50px;
+}
+.btn__app-store:hover {
+    background-color: #ffffff;
+    color: #A658DB;
+}
+.btn__app-store:hover path {
+    fill: #A658DB;
 }
 .btn__play-market {
     display: flex;
     height: 53px;
     width: 200px;
     padding:0 20px;
+    margin: 0 10px 10px 0;
     justify-content: space-between;
     align-items: center;
     border: 2px solid #fff;
     border-radius: 50px;
+}
+.btn__play-market:hover {
+    background-color: #ffffff;
+    color: #A658DB;
+}
+.btn__play-market:hover path {
+    fill: #A658DB;
 }
 .section-1__img {
     max-width: 646px;
@@ -89,9 +105,22 @@
 }
 .section-2__body {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     padding: 10px;
     color: #000000;
+}
+main .h3 {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 22px;
+    line-height: 124%;
+    color: #000000;
+    margin: 0 0 20px 0;
+}
+main .paragraph {
+    font-size: 18px;
+    line-height: 124%;
+    color: #B0B0B0;
 }
 .link_img {
     border: 1px solid #8253D8;
@@ -105,46 +134,83 @@
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    width: 33.33%;
 }
 .section-2__body__list1 img{
     min-width: 35px;
     min-height: 35px;
-    margin: 30px;
-
-
+    margin: 24px auto;
 }
 .s2-b-l1__link1 {
     display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 33.33%;
+}
+.s2-b-l1__link1 .link1_text {
+    text-align: right;
+    padding: 0 20px;
 }
 .s2-b-l1__link2 {
     display: flex;
-
+    align-items: center;
+    justify-content: center;
+    height: 33.33%;
+}
+.s2-b-l1__link2 .link2_text {
+    text-align: right;
+    padding: 0 20px;
 }
 .s2-b-l1__link3 {
     display: flex;
-
+    align-items: center;
+    justify-content: center;
+    height: 33.33%;
+}
+.s2-b-l1__link3 .link3_text {
+    text-align: right;
+    padding: 0 20px;
 }
 .section-2__body__list2 {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    width: 33.33%;
 }
 .section-2__body__list2 img{
     min-width: 35px;
     min-height: 35px;
-    margin: 22px auto;
+    margin: 24px auto;
 }
 .s2-b-l2__link1 {
     display: flex;
-    justify-content: space-between;
+    align-items: center;
+    justify-content: center;
+    height: 33.33%;
+}
+.s2-b-l2__link1 .link1_text {
+    text-align: left;
+    padding: 0 20px;
 }
 .s2-b-l2__link2 {
     display: flex;
-
+    align-items: center;
+    justify-content: center;
+    height: 33.33%;
+}
+.s2-b-l2__link2 .link2_text {
+    text-align: left;
+    padding: 0 20px;
 }
 .s2-b-l2__link3 {
     display: flex;
-
+    align-items: center;
+    justify-content: center;
+    height: 33.33%;
+}
+.s2-b-l2__link3 .link3_text {
+    text-align: left;
+    padding: 0 20px;
 }
 .section-2__body_img {
     margin: 10px 0;
@@ -155,6 +221,10 @@
 }
 @media (max-width: 530px) {
     .content {
-        padding: 70px 0 0 0;
+    }
+}
+@media (min-width: 1280px) {
+    .section-1__body_title,.section-1__body_text,.section-1__body_buttons{
+        width: 70%;
     }
 }

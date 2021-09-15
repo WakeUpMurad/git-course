@@ -7,7 +7,17 @@
     font-weight: normal;
     text-align: center;
     letter-spacing: -0.2px;
-
+}
+.social-link {
+    display: flex;
+    justify-content: center;
+    margin: 0 10px 10px 0;
+}
+.social-link:hover path {
+    fill: #ffffff;
+}
+.social-link:hover ellipse {
+    fill: #8754D9;
 }
 @media (max-width: 1920px) {
     .container {
@@ -41,21 +51,19 @@
 }
 @media (max-width: 992px) {
     .container {
-        max-width: 750px;
+        max-width: 850px;
     }
-
     .section-1__block {
         flex-direction: column;
         align-items: center;
     }
 
     .section-1__body {
-        margin: auto;
+        margin: 0;
     }
 
     .section-1__body_title, .section-1__body_text {
         text-align: center;
-
         padding: 0;
     }
 
@@ -69,45 +77,60 @@
         align-items: center;
         margin: auto;
     }
-    .section-2__body__list1  h3 {
-        font-weight: 500;
-        font-size: 22px;
-        line-height: 124%;
-        text-align: right;
+    .s2-b-l1__link1 .link1_text {
+        text-align: left;
     }
-    .section-2__body__list1 p {
-        font-size: 18px;
-        line-height: 124%;
-        text-align: right;
+    .s2-b-l1__link2 .link2_text {
+        text-align: left;
+    }
+    .s2-b-l1__link3 .link3_text {
+        text-align: left;
+    }
+    .section-2__body__list1 {
+        min-width: 100%;
+    }
+    .section-2__body__list2 {
+        min-width: 100%;
     }
     .s2-b-l1__link1 {
         display: flex;
+        justify-content: center;
         flex-direction: row-reverse;
     }
-
     .s2-b-l1__link2 {
         display: flex;
         flex-direction: row-reverse;
     }
-
     .s2-b-l1__link3 {
         display: flex;
         flex-direction: row-reverse;
     }
-}
-@media (max-width: 767px) {
-    .container {
-        max-width: none;
+    .s2-b-l2__link1 {
+
+    }
+    .s2-b-l2__link2 {
+
+    }
+    .s2-b-l2__link3 {
+
+    }
+    .footer__link {
+        flex-direction: column;
     }
 }
 @media (max-width: 767px) {
     .container {
-        max-width: none;
+        max-width: 710px;
+    }
+}
+@media (max-width: 556px) {
+    .container {
+        max-width: 500px;
     }
 }
 @media (max-width: 375px) {
     .container {
-        max-width: none;
+        max-width: 335px;
     }
 }
 /*Bootstrap 4 Grid*/

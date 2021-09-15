@@ -62,12 +62,12 @@
 	color: #D6CEE1;
 }
 
-.header__link_social img{
+.social_link img{
 	max-width: 25px;
 	max-height: 25px;
 
 }
-.header__link_social a :hover {
+.social_link a :hover {
 	color: #fff;
 	background-color: #8754D9;
 }
@@ -150,10 +150,6 @@
 	}
 	.header__link {
 		font-size: 24px;
-	}
-	.header .social-link {
-		display: flex;
-		justify-content: center;
 	}
 }
 
